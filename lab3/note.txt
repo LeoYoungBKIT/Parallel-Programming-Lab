@@ -1,0 +1,8 @@
+Chạy:
+mpicc -o matrix-mul matrix-mul.c
+mpiexec -np 4 ./matrix-mul
+
+Chương trình dùng hàm Collective communicate: MPI_Gather 
+Chương trình chạy tốt với 4 processors.
+Nếu chạy với > 4 processors vẫn có thể chạy được hoặc server trường báo bad termination.
+Nếu chạy <4 processors thì chương trình báo "Ket qua sai" hoặc bad termination. 
